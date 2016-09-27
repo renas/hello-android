@@ -2,7 +2,7 @@ tools:
   jdk:
     - 1.8.0_102-b14
   gradle:
-    - 2.4.4
+    - 2.14.1
 
 flows:
   master:
