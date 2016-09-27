@@ -6,7 +6,10 @@ tools:
 
 flows:
   master:
+    - call: sdk
     - (on master, name hello-android) ./gradlew compileDebugSources
+  sdk:
+    - "sdk.dir=/Users/vn0wxf9/Library/Android/sdk" > local.properties
   pr:
   - call: master
 
